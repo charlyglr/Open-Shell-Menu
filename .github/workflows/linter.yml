@@ -1,7 +1,8 @@
-name: Lintenado_MASTER!
+name: Lintenado en Features!
 on:
   push:
     branches: 
+    - '!master'
     - features
 jobs:
   build:
