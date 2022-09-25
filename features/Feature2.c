@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-struct docente {
+struct docente2 {
     char nombre[10];
     char dni[10];
     int nota3;
     int final;
-    }profe;
+    }profe2;
 int main()
 {
 
