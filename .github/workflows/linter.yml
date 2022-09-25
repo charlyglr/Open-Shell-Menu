@@ -1,10 +1,10 @@
 name: Lintenado en Features!
 on:
   push:
-    branches-ignore: [master, main]
-    #branches: 
-    #- '!master'
-    #- features
+    #branches-ignore: [master, main]
+    branches: 
+    - '!master'
+    - features
 jobs:
   build:
     name: Linteando Codigo Base
@@ -20,6 +20,6 @@ jobs:
         env:
           DEFAULT_BRANCH: features
           VALIDATE_ALL_CODEBASE: true
-          VALIDATE_CPP: true
-          VALIDATE_CLANG_FORMAT: true
+          #VALIDATE_CPP: true
+          #VALIDATE_CLANG_FORMAT: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
