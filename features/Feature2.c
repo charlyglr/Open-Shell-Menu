@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-struct docenta {
-    char nombre[20];
-    char dni[15];
+struct docente {
+    char nombre[10];
+    char dni[10];
     int nota3;
     int final;
     }profe;
