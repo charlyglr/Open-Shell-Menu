@@ -3,8 +3,7 @@ on:
   push:
     #branches-ignore: [master, main]
     branches: 
-    - '!master'
-    - features
+    - master
 jobs:
   build:
     name: Linteando Codigo Base
@@ -18,8 +17,7 @@ jobs:
       - name: Lint Code Base
         uses: github/super-linter/slim@v4
         env:
-          DEFAULT_BRANCH: features
           VALIDATE_ALL_CODEBASE: true
-          #VALIDATE_CPP: true
-          #VALIDATE_CLANG_FORMAT: true
+          VALIDATE_CPP: true
+          VALIDATE_CLANG_FORMAT: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
