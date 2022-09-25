@@ -1,0 +1,20 @@
+name: Lintenado el codigo que se pushea!
+on:
+  push:
+    branches: features
+jobs:
+  build:
+    name: Linteando Codigo Base
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+         fetch-depth: 0
+
+      - name: Lint Code Base
+        uses: github/super-linter/slim@v4
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_CPP: true
+          VALIDATE_CLANG_FORMAT: true
