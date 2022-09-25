@@ -15,8 +15,8 @@ jobs:
           fetch-depth: 0
 
       - name: Lint Code Base
-          uses: docker://github/super-linter:latest
-          env:
-          VALIDATE_ALL_CODEBASE: false
-	        VALIDATE_CPP: true
-	        VALIDATE_CLANG_FORMAT: true
+  	uses: docker://github/super-linter:latest
+  	env:
+        VALIDATE_ALL_CODEBASE: false
+	VALIDATE_CPP: true
+	VALIDATE_CLANG_FORMAT: true
