@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 struct alumno {
-    char nombre[30];
-    char matricula[10];
+    char nombre[40];
+    char matricula[8];
     int nota1;
     int nota2;
     int nota3;
