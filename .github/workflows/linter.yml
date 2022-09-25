@@ -1,7 +1,8 @@
 name: Lintenado_MASTER!
 on:
   push:
-    branches: features
+    branches: 
+    - features
 jobs:
   build:
     name: Linteando Codigo Base
