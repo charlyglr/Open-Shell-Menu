@@ -1,7 +1,6 @@
 name: Lintenado el codigo que se pushea!
 on:
   push:
-    branches-ignore: [master, main]
     branches: features
 jobs:
   build:
