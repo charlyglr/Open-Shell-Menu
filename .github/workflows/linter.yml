@@ -1,9 +1,10 @@
 name: Lintenado en Features!
 on:
   push:
-    branches: 
-    - '!master'
-    - features
+    branches-ignore: [master, main]
+    #branches: 
+    #- '!master'
+    #- features
 jobs:
   build:
     name: Linteando Codigo Base
