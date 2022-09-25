@@ -19,6 +19,7 @@ jobs:
         uses: github/super-linter/slim@v4
         env:
           DEFAULT_BRANCH: features
-          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_ALL_CODEBASE: true
           VALIDATE_CPP: true
           VALIDATE_CLANG_FORMAT: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
