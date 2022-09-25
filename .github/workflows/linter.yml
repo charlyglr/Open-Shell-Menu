@@ -1,4 +1,4 @@
-name: Lintenado el codigo que se pushea!
+name: Lintenado_MASTER!
 on:
   push:
     branches: features
