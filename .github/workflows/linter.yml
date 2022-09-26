@@ -22,5 +22,3 @@ jobs:
           OUTPUT_FOLDER: reports
           VALIDATE_ALL_CODEBASE: false
           VALIDATE_CPP: true
-          VALIDATE_CLANG_FORMAT: false
-          
