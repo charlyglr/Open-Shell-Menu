@@ -3,7 +3,7 @@ on:
   push:
     #branches-ignore: [master, main]
     branches: 
-    - master
+    - features
 jobs:
   build:
     name: Linteando Codigo Base
