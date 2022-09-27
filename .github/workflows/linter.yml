@@ -1,9 +1,10 @@
 name: Lintenado en Features!
 on:
   push:
-    #branches-ignore: [master, main]
-    branches: 
-    - features
+    branches: [master, main]
+  pull_request:
+    branches: [master, main]
+
 jobs:
   build:
     name: Linteando Codigo Base
@@ -18,7 +19,9 @@ jobs:
         uses: github/super-linter/slim@v4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DEFAULT_BRANCH: features
+          DEFAULT_BRANCH: master
+          #Carpeta donde se escribira el archivo super-linter.log
           OUTPUT_FOLDER: reports
+          #Variable que solo verifica los archivos nuevos en la rama master.
           VALIDATE_ALL_CODEBASE: false
-          VALIDATE_CPP: true
+          
