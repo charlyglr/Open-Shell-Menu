@@ -1,4 +1,4 @@
-name: Lintenado en Features!
+name: Lintenado en MASTER!
 on:
   push:
     branches: [master, main]
@@ -24,4 +24,3 @@ jobs:
           OUTPUT_FOLDER: reports
           #Variable que solo verifica los archivos nuevos en la rama master.
           VALIDATE_ALL_CODEBASE: false
-          
